@@ -3,7 +3,7 @@ name: Daily Contributions
 on:
   schedule:
     - cron: '0 0 * * 1-5' # Menjalankan setiap Senin - Jumat jam 00:00 UTC
-
+       workflow_dispatch:
 jobs:
   make-contribution:
     runs-on: ubuntu-latest
